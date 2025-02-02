@@ -8,4 +8,7 @@ Suma de dos números reales, tendrá 2 parámetros de entrada y uno de salida qu
 Suma de dos números enteros, tendrá 2 parámetros de entrada y uno de salida que será la solución.
 Suma de tres números reales, tendrá 3 parámetros de entrada y uno de salida que será la solución.
      */
+    private int numero1 = 7;
+
+
 }

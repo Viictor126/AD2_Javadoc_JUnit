@@ -12,4 +12,5 @@ Producto de tres números reales, tendrá 3 parámetros de entrada y uno de sali
 solución.
 Potencia, tendrá dos parámetros de entrada (base y exponente) y uno de salida que será la solución
      */
+    private int numero1 = 7;
 }
