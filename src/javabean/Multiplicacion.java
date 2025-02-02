@@ -12,5 +12,20 @@ Producto de tres números reales, tendrá 3 parámetros de entrada y uno de sali
 solución.
 Potencia, tendrá dos parámetros de entrada (base y exponente) y uno de salida que será la solución
      */
-    private int numero1 = 7;
+    public double multiplicacion(double a, double b){
+        return a * b;
+    }
+
+    public int multiplicacionEnteros(int c, int d){
+        return c * d;
+    }
+
+    public double multiplicacionTresReales(double e, double f, double g){
+        return e * f * g;
+    }
+
+    public double potencia(double base, double exponente){
+        return Math.pow(base, exponente);
+    }
 }
+
