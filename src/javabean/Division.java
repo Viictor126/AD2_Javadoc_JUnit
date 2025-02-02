@@ -1,23 +1,39 @@
 package javabean;
 
-public class Division {
-    /*Esta clase implementará todos los métodos que están relacionados con la división de la calculadora. Esta
-     *clase tendrá los siguientes métodos:
-     *  1. División de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución.
-     *  2. División de dos números enteros, tendrá 2 parámetros de entrada y uno de salida que será la
-     *  solución.
-     *  3. Inverso de un número real, tendrá un parámetro de entrada y uno de salida que será la solución.
-     *  4. Raíz de un número, tendrá un parámetro de entra y uno de salida que será la solución.
-      */
+/**
+ * Clase que proporciona operaciones matemáticas de division.
+ * @author Victor Sabariego aka (victor.sabariego221@comunidadunir.net)
+ * @version 1.0
+ * */
 
+public class Division {
+
+    /**
+     * Divide dos números reales.
+     * @param div1 divisor que será dividido pro el siguiente.
+     * @param div2 divisor que dividirá al siguiente.
+     * @return devuelve el cociente de la division.
+     * */
     public double DivReal(double div1, double div2) {
         return div1 / div2;
     }
 
+    /**
+     * Divide dos números enteros.
+     * @param div1 divisor que será dividido pro el siguiente.
+     * @param div2 divisor que dividirá al siguiente.
+     * @return devuelve el cociente de la division.
+     * */
     public int DivInt(int div1, int div2) {
         return div1 / div2;
     }
 
+    /**
+     * Genera el inverso del número dado.
+     * @param num numero que será invertido
+     * @return devuelve el numero inverso
+     * @throws ArithmeticException si el numero dado es 0.
+     * */
     public double Inverse(double num) {
         if (num != 0)
            return num/(num*num);
