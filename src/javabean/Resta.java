@@ -3,6 +3,19 @@ package javabean;
 
 /**
  * Clase que proporciona operaciones matemáticas de resta.
+ * Si alguno de los números de entrada es cero no daría ningún tipo de error ni lógico ni matemático.
+ * Si no se permitieran números negativos se lanzaría un throw IllegalArgumentException con su pertinente documentación
+ *<pre>{@code
+ * public int resta(in a, int b){
+ *     if (a < 0 || b < 0) {
+ *         throw new IllegalArgumentException("Error: No se permiten números negativos.");
+ *     }
+ *     int resultado = a - b;
+ *     if (resultado < 0) {
+ *         throw new IllegalArgumentException("Error: El resultado no puede ser negativo.");
+ *     }
+ * }
+ * }</pre>
  * @author Victor Sabariego aka (victor.sabariego221@comunidadunir.net)
  * @version 1.0
  * */
