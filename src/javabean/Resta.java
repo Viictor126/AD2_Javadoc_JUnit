@@ -1,6 +1,8 @@
 package javabean;
 
 
+import java.util.Scanner;
+
 /**
  * Clase que proporciona operaciones matemáticas de resta.
  * Si alguno de los números de entrada es cero no daría ningún tipo de error ni lógico ni matemático.
@@ -63,4 +65,40 @@ public class Resta {
     public static double RestaAcum(double num1){
         return num -= num1;
     }
+
+    public static void menu() {
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+
+        do{
+            System.out.println("Que funcionalidad de la resta deseas utiliar?");
+            System.out.println("1. RestaReal");
+            System.out.println("2. RestaInt");
+            System.out.println("3. RestaReal2");
+            System.out.println("4. RestaAcum");
+            System.out.println("5. Exit");
+
+            opcion = sc.nextInt();
+
+            switch (opcion){
+                case 1:
+                    Resta.RestaReal(1,2);
+                    break;
+                case 2:
+                    Resta.RestaInt(1,2);
+                    break;
+                case 3:
+                    Resta.RestaReal2(1,2,3);
+                    break;
+                case 4:
+                    System.out.println("numero que será restado: " + num);
+                    Resta.RestaAcum(1);
+                    break;
+                case 5:
+                    System.exit(0);
+            }
+
+        }while (true);
+    }
+
 }
