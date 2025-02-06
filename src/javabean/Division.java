@@ -16,7 +16,7 @@ public class Division {
      * @return devuelve el cociente de la division.
      * @throws IllegalArgumentException Si algún número es negativo o si el denominador es cero.
      * */
-    public double DivReal(double div1, double div2) {
+    public static double DivReal(double div1, double div2) {
         if (div1 < 0 || div2 <= 0) {
             throw new IllegalArgumentException("Error: No se permiten números negativos.");
         }
@@ -38,7 +38,7 @@ public class Division {
      * @return devuelve el cociente de la division. Si el resultado no es entero devuelve un resultado truncado.
      * @throws IllegalArgumentException Si el numerador o denominador son negativos, o el denominador es cero.
      * */
-    public int DivInt(int div1, int div2) {
+    public static int DivInt(int div1, int div2) {
         if (div1 < 0 || div2 <= 0) {
             throw new IllegalArgumentException("Error: No se permiten números negativos.");
         }
@@ -51,7 +51,7 @@ public class Division {
      * @return devuelve el numero inverso
      * @throws ArithmeticException si el numero dado es 0.
      * */
-    public double Inverse(double num) {
+    public static double Inverse(double num) {
         if (num != 0)
            return num/(num*num);
         else

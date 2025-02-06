@@ -22,7 +22,7 @@ package javabean;
 
 public class Resta {
 
-    private double num;
+    private static double num;
 
     /**
      * Resta de dos números reales.
@@ -30,7 +30,7 @@ public class Resta {
      * @param num2 número que resta al anterior
      * @return devuelve el resultado de la resta.
      * */
-    public double RestaReal(double num1, double num2){
+    public static double RestaReal(double num1, double num2){
         return num1 - num2;
     }
 
@@ -40,7 +40,7 @@ public class Resta {
      * @param num2 número que resta al anterior
      * @return devuelve el resultado de la resta.
      * */
-    public int RestaInt(int num1, int num2){
+    public static int RestaInt(int num1, int num2){
         return num1 - num2;
     }
 
@@ -51,7 +51,7 @@ public class Resta {
      * @param num3 número que restará el resultado la resta anterior
      * @return devuelve el resultado de la resta.
      * */
-    public double RestaReal2(double num1, double num2, double num3){
+    public static double RestaReal2(double num1, double num2, double num3){
         return num1 - num2 - num3;
     }
 
@@ -60,7 +60,7 @@ public class Resta {
      * @param num1 número que restará al resultado anterior.
      * @return devuelve el resultado de la resta.
      * */
-    public double RestaAcum(double num1){
+    public static double RestaAcum(double num1){
         return num -= num1;
     }
 }
