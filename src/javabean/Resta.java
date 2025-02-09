@@ -98,7 +98,7 @@ public class Resta {
                     System.exit(0);
             }
 
-        }while (true);
+        }while (sc.nextInt() != '5');
     }
 
 }

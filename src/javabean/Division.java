@@ -1,5 +1,7 @@
 package javabean;
 
+import java.util.Scanner;
+
 /**
  * Clase que proporciona operaciones matemáticas de division.
  * @author Victor Sabariego aka (victor.sabariego221@comunidadunir.net)
@@ -57,4 +59,35 @@ public class Division {
         else
            throw new ArithmeticException("No se puede calcular el inverso de 0");
     }
+
+    public static void menu() {
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+
+        do{
+            System.out.println("Que funcionalidad de la divison deseas utiliar?");
+            System.out.println("1. DivReal");
+            System.out.println("2. DivInt");
+            System.out.println("3. Inverse");
+            System.out.println("4. Exit");
+
+            opcion = sc.nextInt();
+
+            switch (opcion){
+                case 1:
+                    Division.DivReal(1,2);
+                    break;
+                case 2:
+                    Division.DivInt(1,2);
+                    break;
+                case 3:
+                    Division.Inverse(3);
+                    break;
+                case 4:
+                    System.exit(0);
+            }
+
+        }while (sc.nextInt() != '4');
+    }
+
 }
