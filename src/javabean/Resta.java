@@ -85,23 +85,25 @@ public class Resta {
 
             switch (opcion){
                 case 1:
-                    Resta.RestaReal(1,2);
+                    System.out.println(Resta.RestaReal(1,2));
                     break;
                 case 2:
-                    Resta.RestaInt(1,2);
+                    System.out.println(Resta.RestaInt(1,2));
                     break;
                 case 3:
-                    Resta.RestaReal2(1,2,3);
+                    System.out.println(Resta.RestaReal2(1,2,3));
                     break;
                 case 4:
                     System.out.println("numero que será restado: " + num);
-                    Resta.RestaAcum(1);
+                    System.out.println(Resta.RestaAcum(1));
                     break;
                 case 5:
                     System.exit(0);
+                default:
+                    System.out.println("Opcion no valida");
+                    break;
             }
-
-        }while (sc.nextInt() != '5');
+        }while (opcion != 5);
     }
 
 }

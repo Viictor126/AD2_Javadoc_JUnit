@@ -78,16 +78,19 @@ public class Division {
 
             switch (opcion){
                 case 1:
-                    Division.DivReal(1,2);
+                    System.out.println(Division.DivReal(1,2));
                     break;
                 case 2:
-                    Division.DivInt(1,2);
+                    System.out.println(Division.DivInt(1,2));
                     break;
                 case 3:
-                    Division.Inverse(3);
+                    System.out.println(Division.Inverse(3));
                     break;
                 case 4:
                     System.exit(0);
+                default:
+                    System.out.println("Opcion no valida");
+                    break;
             }
 
         }while (sc.nextInt() != '4');
