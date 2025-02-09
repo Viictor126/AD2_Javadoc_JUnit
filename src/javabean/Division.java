@@ -60,6 +60,9 @@ public class Division {
            throw new ArithmeticException("No se puede calcular el inverso de 0");
     }
 
+    /**
+     * Menu para llamar a los metodos de esta clase con una sola llamada a este metodo.
+     */
     public static void menu() {
         Scanner sc = new Scanner(System.in);
         int opcion;

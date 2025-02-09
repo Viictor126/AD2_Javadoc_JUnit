@@ -66,6 +66,9 @@ public class Resta {
         return num -= num1;
     }
 
+    /**
+     * Menu para llamar a los metodos de esta clase con una sola llamada a este metodo.
+     */
     public static void menu() {
         Scanner sc = new Scanner(System.in);
         int opcion;
