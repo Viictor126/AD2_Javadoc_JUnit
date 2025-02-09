@@ -63,21 +63,24 @@ Suma de tres números reales, tendrá 3 parámetros de entrada y uno de salida q
 
             switch (opcion){
                 case 1:
-                    Suma.sumaEnteros(1,2);
+                    System.out.println(Suma.sumaEnteros(1,2));;
                     break;
                 case 2:
-                    Suma.sumaReales(1,2);
+                    System.out.println(Suma.sumaReales(1,2));;
                     break;
                 case 3:
-                    Suma.sumaTresReales(1,2,3);
+                    System.out.println(Suma.sumaTresReales(1,2,3));;
                     break;
                 case 4:
+                    System.out.println("Saliendo...");
+                    sc.close();
                     System.exit(0);
+                default:
+                    System.out.println("Opción no válida");
             }
 
-        }while (true);
+        }while (opcion != 5);
     }
-
 
     /**
      * Documentacion en casos especiales:

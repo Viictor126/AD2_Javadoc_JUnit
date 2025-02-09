@@ -73,25 +73,27 @@ Potencia, tendrá dos parámetros de entrada (base y exponente) y uno de salida 
 
             switch (opcion){
                 case 1:
-                    Multiplicacion.multiplicacion(1, 2);
+                    System.out.println(Multiplicacion.multiplicacion(1, 2));
                     break;
                 case 2:
-                    Multiplicacion.multiplicacionEnteros(1, 2);
+                    System.out.println(Multiplicacion.multiplicacionEnteros(1, 2));;
                     break;
                 case 3:
-                    Multiplicacion.multiplicacionTresReales(1,2,3);
+                    System.out.println(Multiplicacion.multiplicacionTresReales(1,2,3));;
                     break;
                 case 4:
-                   Multiplicacion.potencia(1,2);
+                    System.out.println(Multiplicacion.potencia(1,2));;
                     break;
                 case 5:
+                    System.out.println("Saliendo...");
+                    sc.close();
                     System.exit(0);
+                default:
+                    System.out.println("Opción no válida");
             }
 
-        }while (sc.nextInt() != '5');
+        }while (opcion != 5);
     }
-
-
 
 
 }
