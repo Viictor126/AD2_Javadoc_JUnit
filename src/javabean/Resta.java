@@ -104,6 +104,4 @@ public class Resta {
             }
         }while (opcion != 5);
     }
-
-main
 }
