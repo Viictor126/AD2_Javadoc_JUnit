@@ -1,6 +1,5 @@
 package javabean;
 
-
 import java.util.Scanner;
 
 /**
@@ -106,4 +105,5 @@ public class Resta {
         }while (opcion != 5);
     }
 
+main
 }

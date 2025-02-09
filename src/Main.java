@@ -6,7 +6,6 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         
         int opc;
@@ -26,5 +25,5 @@ public class Main {
             }
         }while (opc != 4);
 
+main
     }
-}
