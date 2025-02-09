@@ -10,6 +10,4 @@ Resta de tres números reales, tendrá 3 parámetros de entrada y uno de salida 
 Resta con valor acumulado, tendrá un parámetro de entrada y la clase deberá de guardar el valor
 acumulado.
      */
-
-    private int numero1 = 7;
 }

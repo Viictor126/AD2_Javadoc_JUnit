@@ -10,5 +10,4 @@ solución.
 Inverso de un número real, tendrá un parámetro de entrada y uno de salida que será la solución.
 Raíz de un número, tendrá un parámetro de entra y uno de salida que será la solución.
      */
-    private int numero1 = 7;
 }

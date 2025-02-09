@@ -1,5 +1,12 @@
 package javabean;
 
+import java.util.Scanner;
+
+/**
+ * Clase de multiplicación
+ * @author Wilmer Oscategui(github:wmoises40)
+ * @version 1.0
+ */
 public class Multiplicacion {
     /*
     Esta clase implementará todos los métodos que están relacionados con la multiplicación de la calculadora.
@@ -12,20 +19,80 @@ Producto de tres números reales, tendrá 3 parámetros de entrada y uno de sali
 solución.
 Potencia, tendrá dos parámetros de entrada (base y exponente) y uno de salida que será la solución
      */
-    public double multiplicacion(double a, double b){
+
+    /**
+     * @param a Multiplicando
+     * @param b Multiplicador
+     * @return Producto
+     */
+    public static double multiplicacion(double a, double b){
         return a * b;
     }
 
-    public int multiplicacionEnteros(int c, int d){
+    /**
+     * @param c Multiplicando
+     * @param d Multiplicador
+     * @return Producto
+     */
+    public static int multiplicacionEnteros(int c, int d){
         return c * d;
     }
 
-    public double multiplicacionTresReales(double e, double f, double g){
+    /**
+     * @param e Primer número a multiplicar
+     * @param f Segundo número a multiplicar
+     * @param g Tercer número a multiplicar
+     * @return Producto
+     */
+    public static double multiplicacionTresReales(double e, double f, double g){
         return e * f * g;
     }
 
-    public double potencia(double base, double exponente){
+    /**
+     * @param base
+     * @param exponente
+     * @return Resultado
+     */
+    public static double potencia(double base, double exponente){
         return Math.pow(base, exponente);
     }
+
+    public static void menu() {
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+
+        do{
+            System.out.println("Que funcionalidad de la multiplicacion deseas utiliar?");
+            System.out.println("1. Multiplicacion de reales");
+            System.out.println("2. Multiplicacion de enteros");
+            System.out.println("3. Multiplicacion de tres reales");
+            System.out.println("4. Potencia");
+            System.out.println("5. Exit");
+
+            opcion = sc.nextInt();
+
+            switch (opcion){
+                case 1:
+                    Multiplicacion.multiplicacion(1, 2);
+                    break;
+                case 2:
+                    Multiplicacion.multiplicacionEnteros(1, 2);
+                    break;
+                case 3:
+                    Multiplicacion.multiplicacionTresReales(1,2,3);
+                    break;
+                case 4:
+                   Multiplicacion.potencia(1,2);
+                    break;
+                case 5:
+                    System.exit(0);
+            }
+
+        }while (sc.nextInt() != '5');
+    }
+
+
+
+
 }
 
