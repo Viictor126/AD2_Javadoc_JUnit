@@ -19,7 +19,6 @@ public class Main {
             System.out.println("3.- Multiplicación");
             System.out.println("4.- Division");
             System.out.println("5.- Salir");
-
             opc = sc.nextInt();
             switch (opc) {
                 case 1:
