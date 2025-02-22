@@ -95,6 +95,4 @@ public class Division {
 
         }while (sc.nextInt() != '4');
     }
-
-main
 }
