@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         int opc;
         do {
             System.out.println("1.- Retsa");
             System.out.println("4.- Salir");
-            
+
             opc = sc.nextInt();
             switch (opc) {
                 case 1:
@@ -23,7 +23,7 @@ public class Main {
                 default:
                     throw new IllegalStateException("Unexpected value: " + opc);
             }
-        }while (opc != 4);
+        } while (opc != 4);
 
-main
     }
+}

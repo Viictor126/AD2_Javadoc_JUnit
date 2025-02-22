@@ -67,7 +67,7 @@ public class Division {
         Scanner sc = new Scanner(System.in);
         int opcion;
 
-        do{
+        do {
             System.out.println("Que funcionalidad de la divison deseas utiliar?");
             System.out.println("1. DivReal");
             System.out.println("2. DivInt");
@@ -76,12 +76,12 @@ public class Division {
 
             opcion = sc.nextInt();
 
-            switch (opcion){
+            switch (opcion) {
                 case 1:
-                    System.out.println(Division.DivReal(1,2));
+                    System.out.println(Division.DivReal(1, 2));
                     break;
                 case 2:
-                    System.out.println(Division.DivInt(1,2));
+                    System.out.println(Division.DivInt(1, 2));
                     break;
                 case 3:
                     System.out.println(Division.Inverse(3));
@@ -93,8 +93,6 @@ public class Division {
                     break;
             }
 
-        }while (sc.nextInt() != '4');
+        } while (sc.nextInt() != '4');
     }
-
-main
 }
